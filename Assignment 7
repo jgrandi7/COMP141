@@ -26,7 +26,7 @@ if [ -z "$1" ]; then
 
 fi  
 
-# check if filename has improper characters
+# check if filename has invalid characters
 
 if [[ ! $1 =~ ^[A-Z] || $1 =~ [@] ]]; then 
 
@@ -36,7 +36,7 @@ if [[ ! $1 =~ ^[A-Z] || $1 =~ [@] ]]; then
 
 fi 
 
-# Now that we know the file name is not empty, assign to variable. 
+# Now that we know the file name is not empty and does not have invalid characters, assign to variable. 
 
 filename="$1.java" # The destination of the script's output 
 
